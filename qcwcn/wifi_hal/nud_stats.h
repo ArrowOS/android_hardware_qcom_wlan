@@ -44,7 +44,10 @@
 #include <netlink/netlink.h>
 #include <netlink/socket.h>
 #include "wifi_hal.h"
+
+#if !defined(__UAPI_DEF_IN_ADDR)
 #include <bits/in_addr.h>
+#endif
 
 #define INET6_ADDRSTRLEN 46
 
